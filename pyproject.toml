@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = "Openweathermap API"
+authors = ["Admin <admin@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+uvicorn = "^0.17.6"
+fastapi = "^0.79.1"
+fastapi-cache2 = "^0.1.9"
+geoip2 = "^4.2.0"
+httpx = "^0.23.0"
+pytest = "^7.1.2"
+
+[tool.poetry.dev-dependencies]
+isort = "^4.3.21"
+autoflake = "^1.4"
+flake8 = "^3.7.9"
+pytest-cov = "^2.12.1"
+pytest = "^7.1.2"
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+line_length = 88
+[build-system]
+requires = ["poetry>=1.1.14"]
+build-backend = "poetry.masonry.api"
+
